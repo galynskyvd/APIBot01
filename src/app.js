@@ -1,5 +1,6 @@
 const express = require('express');
 const routes = require('./routes');
+const {server: {port}} = require('../config/options.json');
 const bodyParser = require('body-parser');
 const app = express();
 
@@ -15,6 +16,6 @@ app.use((req, res, next) => {
 
 app.use('/', routes);
 
-app.listen(3001, () => {
-	console.log('Server API is started on port 3001')
+app.listen(port, () => {
+	console.log(`Server API is started on port ${port}`)
 });

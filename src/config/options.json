@@ -5,5 +5,8 @@
     "db": "",
     "port": "",
     "host": ""
+  },
+  "server": {
+    "port": ""
   }
 }
